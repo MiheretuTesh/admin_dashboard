@@ -3,6 +3,7 @@ import { Row, Col } from "antd";
 import { Input, Space } from "antd";
 import { AudioOutlined, UserOutlined, BellFilled } from "@ant-design/icons";
 import { Avatar, Image } from "antd";
+import { Link } from "react-router-dom";
 const { Search } = Input;
 const suffix = (
   <AudioOutlined
@@ -18,7 +19,6 @@ function NavbarAdmin() {
   return (
     <div>
       <Row justify="end">
-        <Col span={0}>col-4</Col>
         <Col span={1}></Col>
         <Col span={2}>
           {" "}
@@ -38,14 +38,6 @@ function NavbarAdmin() {
             icon={<UserOutlined />}
           />
           <span style={{ cursor: "pointer" }}>Sing up</span>
-          <BellFilled
-            style={{
-              cursor: "pointer",
-              fontSize: 20,
-              marginLeft: 15,
-              paddingTop: "1rem"
-            }}
-          />
         </Col>
       </Row>
     </div>

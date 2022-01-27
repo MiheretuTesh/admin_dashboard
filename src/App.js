@@ -1,11 +1,17 @@
 // import "./App.css";
-import LayoutAdmin from "./components/layouts/LayoutAdmin";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
 import "antd/dist/antd.min.css";
 
 function App() {
   return (
-    <div className="">
-      <LayoutAdmin />
+    <div className="App">
+      <Dashboard />
     </div>
   );
 }
