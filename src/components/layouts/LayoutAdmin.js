@@ -7,19 +7,30 @@ import {
   TeamOutlined,
   UserOutlined,
 } from "@ant-design/icons";
+import { Divider } from "antd";
+
+import HeaderAdmin from "./HeaderAdmin";
+import NavbarAdmin from "./NavbarAdmin";
+import CardAdmin from "../CardAdmin";
+import Cards from "../Cards";
 
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
 
 function LayoutAdmin() {
-  const { collapsed, setCollapsed } = useState(false);
+  const { collapsed, setCollapsed } = useState(true);
+
+  const toggleCollapse = (e) => {
+    setCollapsed(!collapsed);
+    console.log(collapsed);
+  };
 
   return (
     <Layout style={{ minHeight: "100vh" }}>
       <Sider
         collapsible
         collapsed={collapsed}
-        onCollapse={() => setCollapsed(!collapsed)}
+        onCollapse={() => toggleCollapse()}
       >
         <div className="logo" />
         <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
@@ -42,17 +53,25 @@ function LayoutAdmin() {
         </Menu>
       </Sider>
       <Layout className="site-layout">
-        <Header className="site-layout-background" style={{ padding: '1rem 0', background: '#F0F2F5'}} />
+        <Header
+          className="site-layout-background"
+          style={{ padding: "0rem 0", background: "#F0F2F5" }}
+        >
+          <NavbarAdmin />
+        </Header>
         <Content style={{ margin: "0 16px" }}>
-          <Breadcrumb style={{ margin: "16px 0" }}>
+          {/* <Breadcrumb style={{ margin: "16px 0" }}>
             <Breadcrumb.Item>User</Breadcrumb.Item>
             <Breadcrumb.Item>Bill</Breadcrumb.Item>
-          </Breadcrumb>
+          </Breadcrumb> */}
           <div
             className="site-layout-background"
-            style={{ padding: 24, minHeight: 990,  background: '#fff' }}
+            style={{ padding: 24, minHeight: 1000, background: "#fff" }}
           >
-            Bill is a cat.
+            <HeaderAdmin /> <Divider />
+
+            <CardAdmin />
+            <Cards />
           </div>
         </Content>
         <Footer style={{ textAlign: "center" }}>
