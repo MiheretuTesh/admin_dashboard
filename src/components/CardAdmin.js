@@ -30,10 +30,10 @@ function CardAdmin() {
             title={
               <Row justify="space-between">
                 <Col span={4}>
-                  <Title level={2}>Today’s Sales</Title>
+                  <Title level={4}>Today’s Sales</Title>
                 </Col>
                 <Col span={4}>
-                  <DollarCircleFilled style={{ fontSize: 40 }} />
+                  <DollarCircleFilled style={{ fontSize: 30 }} />
                 </Col>
               </Row>
             }
@@ -48,10 +48,10 @@ function CardAdmin() {
             title={
               <Row justify="space-between">
                 <Col span={4}>
-                  <Title level={2}>Today’s Users</Title>
+                  <Title level={4}>Today’s Users</Title>
                 </Col>
                 <Col span={4}>
-                  <UsergroupAddOutlined style={{ fontSize: 40 }} />
+                  <UsergroupAddOutlined style={{ fontSize: 30 }} />
                 </Col>
               </Row>
             }
@@ -66,10 +66,10 @@ function CardAdmin() {
             title={
               <Row justify="space-between">
                 <Col span={4}>
-                  <Title level={2}>New Clients</Title>
+                  <Title level={4}>New Clients</Title>
                 </Col>
                 <Col span={4}>
-                  <PlusCircleFilled style={{ fontSize: 40 }} />
+                  <PlusCircleFilled style={{ fontSize: 30 }} />
                 </Col>
               </Row>
             }
@@ -84,10 +84,10 @@ function CardAdmin() {
             title={
               <Row justify="space-between">
                 <Col span={4}>
-                  <Title level={2}>New Orders</Title>
+                  <Title level={4}>New Orders</Title>
                 </Col>
                 <Col span={4}>
-                  <StockOutlined style={{ fontSize: 40 }} />
+                  <StockOutlined style={{ fontSize: 30 }} />
                 </Col>
               </Row>
             }

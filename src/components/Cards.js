@@ -30,10 +30,10 @@ function Cards() {
           title={
             <Row justify="space-between">
               <Col span={4}>
-                <Title level={2}>Current status</Title>
+                <Title level={3}>Current status</Title>
               </Col>
               <Col span={4}>
-                <PlusCircleFilled style={{ fontSize: 40 }} />
+                <PlusCircleFilled style={{ fontSize: 30 }} />
               </Col>
             </Row>
           }
@@ -41,18 +41,18 @@ function Cards() {
         >
           <Row gutter={16}>
             <Col span={8} style={colStyle}>
-              <Progress type="circle" percent={30} width={150} />
+              <Progress type="circle" percent={30} width={120} />
             </Col>
             <Col span={8} style={colStyle}>
               <Progress
                 type="circle"
                 percent={70}
-                width={150}
+                width={120}
                 status="exception"
               />
             </Col>
             <Col span={8} style={colStyle}>
-              <Progress type="circle" percent={100} width={150} />
+              <Progress type="circle" percent={100} width={120} />
             </Col>
             <Col span={12}>
               <Card style={cardStyle}>

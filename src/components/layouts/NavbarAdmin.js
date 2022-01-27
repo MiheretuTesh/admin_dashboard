@@ -19,8 +19,7 @@ function NavbarAdmin() {
   return (
     <div>
       <Row justify="end">
-        <Col span={1}></Col>
-        <Col span={3}>
+        <Col span={5}>
           {" "}
           <Search
             placeholder="input search text"
