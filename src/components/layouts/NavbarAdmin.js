@@ -20,7 +20,7 @@ function NavbarAdmin() {
     <div>
       <Row justify="end">
         <Col span={1}></Col>
-        <Col span={2}>
+        <Col span={3}>
           {" "}
           <Search
             placeholder="input search text"
